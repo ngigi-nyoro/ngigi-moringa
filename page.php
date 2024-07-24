@@ -547,6 +547,12 @@ get_header();
                 	                </div>
                 	            </div>
                 	            
+                	            <div class="mb-4">
+                	                <div class="course-image">
+    	                                <img src="<?php echo get_template_directory_uri().'/images/Thumbnail-1.png'; ?>" class="b-radius-20" alt="">
+    	                            </div>
+                	           </div>
+                	            
                 	           
                 	            
                 	            
@@ -577,12 +583,35 @@ get_header();
                 	                            
                 	                           
                 	                           <?php if( get_field('course_brochure') &&  get_field('course_brochure')): ?>
-                    	                            <p>Installment plans are available on <a href="<?php the_field('cta_course_brochure'); ?>" target="_blank">the installment plans document</a></p>
+                    	                            <p>Installment plans are available on <b><a href="<?php the_field('cta_course_brochure'); ?>" target="_blank">the installment plans document</a></b></p>
                     	                        <?php endif; ?>
                 	                            
                 	                       </div>
                 	                   </div>
                 	               </div>
+                	           </div>
+                	           <div class="course-overview">
+                	                <div class="">
+                	                    <div class="">
+                	                        <h1 class="section-title">Course Prerequisites</h1>
+                	                        <div class="course-overview-inner">
+                	                            
+                	                            <?php if( get_field('course_prerequisites')): ?>
+                	                                <?php the_field('course_prerequisites'); ?>
+                	                            <?php endif; ?>
+                	                            
+                	                            <div class="mt-4 mb-3 text-center">
+                	                                <a href="#" class="btn-1 btn-outline">Download Brochure</a>
+                	                            </div>
+                	                            
+                	                       </div>
+                	                   </div>
+                	               </div>
+                	           </div>
+                	           <div class="">
+                	                <div class="course-image">
+    	                                <img src="<?php echo get_template_directory_uri().'/images/90867.jpg'; ?>" class="b-radius-20" alt="">
+    	                            </div>
                 	           </div>
         	                </div>
         	                
